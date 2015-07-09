@@ -1,0 +1,5 @@
+hangman.MainActivity;hangman.MainActivity
+hangman.menu;hangman.menu
+hangman.highScores;hangman.highScores
+hangman.game;hangman.game
+hangman.SimpleListItem2Adapter;hangman.SimpleListItem2Adapter

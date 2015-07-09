@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="Weather\Weather.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.L" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Weather\MainActivity.cs">
+    <Files>
+      <File FileName="Weather\MainActivity.cs" Line="86" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Weather AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="Theme.DeviceDefault" MonoForAntroid.PreferredDevice="Nexus 4" />
+</Properties>

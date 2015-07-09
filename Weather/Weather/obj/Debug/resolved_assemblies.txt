@@ -1,0 +1,4 @@
+C:\Users\Cameron McPhail\Documents\Projects\Weather\Weather\bin\Debug\Weather.dll
+C:\Users\Cameron McPhail\Documents\Projects\Weather\Components\XamarinActionBarSherlock-4.4.0.6\lib\android\ActionBarSherlock.dll
+C:\Users\Cameron McPhail\Documents\Projects\Weather\Components\restsharp-105.0.1.0\lib\android\RestSharp.MonoDroid.dll
+C:\Users\Cameron McPhail\Documents\Projects\Weather\Components\XamarinActionBarSherlock-4.4.0.6\lib\android\Xamarin.Android.Support.v4.dll

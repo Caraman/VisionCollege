@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{2B137EF5-2897-48A3-AE7C-222F98F77F8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Weather</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Weather</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="RestSharp.MonoDroid">
+      <HintPath>..\Components\restsharp-105.0.1.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ActionBarSherlock">
+      <HintPath>..\Components\XamarinActionBarSherlock-4.4.0.6\lib\android\ActionBarSherlock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\XamarinActionBarSherlock-4.4.0.6\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RESThandler.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="DataAdapter.cs" />
+    <Compile Include="Data.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\layout\FiveDayForecast.axml" />
+    <AndroidResource Include="Resources\layout\CustomRow.axml" />
+    <AndroidResource Include="Resources\layout\SingleDayView.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\_01d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_01n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_02d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_02n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_03d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_03n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_04d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_04n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_09d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_09n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_10d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_10n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_11d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_11n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_13d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_13n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_50d.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\_50n.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_bottom_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_stacked_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_texture_tile_hologreyscale.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_transparent_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cab_background_bottom_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cab_background_top_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\list_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\list_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_dropdown_panel_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_bg_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_primary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_secondary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_disabled_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_bottom_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_stacked_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_texture_tile_hologreyscale.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_transparent_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cab_background_bottom_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cab_background_top_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\list_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\list_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_dropdown_panel_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_bg_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_primary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_secondary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_disabled_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_bottom_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_stacked_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_texture_tile_hologreyscale.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_transparent_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cab_background_bottom_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cab_background_top_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\list_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\list_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_dropdown_panel_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_bg_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_primary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_secondary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_disabled_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_bottom_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_stacked_solid_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_texture_tile_hologreyscale.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_transparent_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cab_background_bottom_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cab_background_top_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\list_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\list_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_dropdown_panel_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_bg_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_primary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_secondary_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_default_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_disabled_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_focused_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_pressed_hologreyscale.9.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\ab_background_textured_hologreyscale.xml" />
+    <AndroidResource Include="Resources\drawable\btn_cab_done_hologreyscale.xml" />
+    <AndroidResource Include="Resources\drawable\progress_horizontal_hologreyscale.xml" />
+    <AndroidResource Include="Resources\drawable\selectable_background_hologreyscale.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_background_ab_hologreyscale.xml" />
+    <AndroidResource Include="Resources\drawable\tab_indicator_ab_hologreyscale.xml" />
+    <AndroidResource Include="Resources\layout\SelectCity.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="restsharp">
+      <Version>105.0.1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="XamarinActionBarSherlock">
+      <Version>4.4.0.6</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>
